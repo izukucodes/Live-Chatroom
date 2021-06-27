@@ -14,7 +14,7 @@ const requireAuth = (to, from, next) => {
 };
 
 // If user is logged in, you can't access Welcome
-const requireUser = (to, from, next) => {
+const requireNoAuth = (to, from, next) => {
   let user = projectAuth.currentUser;
   if (user) {
     next({ name: "Chatroom" });
@@ -28,7 +28,7 @@ const routes = [
     path: "/",
     name: "Welcome",
     component: Welcome,
-    beforeEnter: requireUser,
+    beforeEnter: requireNoAuth,
   },
   {
     path: "/chatroom",
