@@ -1,5 +1,10 @@
 # live-chatroom
 
+## Demo
+
+<a href="https://live-chatroom-8c308.web.app/chatroom" target="_blank">Preview Demo</a>
+ 
+
 ## Project setup
 ```
 npm install
